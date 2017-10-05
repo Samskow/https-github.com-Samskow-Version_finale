@@ -353,7 +353,7 @@ class ViewController: UIViewController {
         randomAnimals()
         setImagesToCards()
     }
-    //==================
+    //===================
     enum UIViewAnimationCurve : Int {
         case EaseInOut
         case EaseIn
