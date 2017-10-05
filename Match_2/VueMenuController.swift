@@ -14,15 +14,13 @@ import UIKit
 
 class VueMenuController: UIViewController {
     //-------------------
- 
-    
     @IBOutlet weak var animauxConnection: UIImageView!
     @IBOutlet weak var jouer: UIButton!
-    
     //-------------------
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-         //================== ANIMATION DU DEBUT ================
+         //================== ANIMATION DEBUT (REBONDISSEMENT) ================
         
         animauxConnection.transform = CGAffineTransform(scaleX: 0, y: 0)
         UIView.animate(withDuration: 1.5,
@@ -33,7 +31,6 @@ class VueMenuController: UIViewController {
                        animations: {
             self.animauxConnection.transform = .identity
         }, completion: nil)
-        
         
         jouer.transform = CGAffineTransform(scaleX: 0, y: 0)
         UIView.animate(withDuration: 1.5,

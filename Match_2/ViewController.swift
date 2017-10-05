@@ -4,7 +4,7 @@ import AVFoundation
 import AudioToolbox
 //==========================
 class ViewController: UIViewController {
-    //==========================
+//==========================
     @IBOutlet weak var back_1: UIView!
     @IBOutlet weak var front_1: UIView!
     @IBOutlet weak var back_2: UIView!
@@ -71,7 +71,6 @@ class ViewController: UIViewController {
     
     //==========================
     
-    
     @IBOutlet weak var card_1: UIView!
     @IBOutlet weak var card_2: UIView!
     @IBOutlet weak var card_3: UIView!
@@ -94,26 +93,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var card_20: UIView!
     
    //==========================
-    
     @IBOutlet weak var boutonReset: UIButton!
-    
-    
+   //==========IMAGE BRAVO================
+    @IBOutlet weak var gagne: UIImageView!
+   //==========================
     
     var arrayOfImageViews: [UIImageView]!
-    var arrayOfAnimalNames = ["lemur.png", "bull.png", "chick.png", "fox.png","hedgehog.png","hippopotamus.png","koala.png","pig.png","tiger.png","zebra.png","lemur.png", "bull.png", "chick.png", "fox.png","hedgehog.png","hippopotamus.png","koala.png","pig.png","tiger.png","zebra.png",]
+    var arrayOfAnimalNames = ["lemur.png", "bull.png", "chick.png", "fox.png","hedgehog.png","hippopotamus.png","koala.png",
+       "pig.png","tiger.png","zebra.png","lemur.png", "bull.png", "chick.png", "fox.png","hedgehog.png","hippopotamus.png","koala.png","pig.png","tiger.png","zebra.png",]
     
     var arrayOfRandomAnimalNames = [String]()
     var arrayChosenCards = [String]()
     var arrayOfCards = [UIView]()
-    
     var arrayOfShowingBacks = [UIView]()
     var arrayOfHidingFronts = [UIView]()
-    
     var cards: [UIView]!
     var compteurDeCache = 0
-    // ANIMATION DE BRAVO!
-    @IBOutlet weak var gagne: UIImageView!
-    //-------------------
+    //==========================
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -248,11 +245,9 @@ class ViewController: UIViewController {
     //==========================
     func flipCard(from: UIView, to: UIView) {
         let transitionOptions: UIViewAnimationOptions = [.transitionFlipFromRight, .showHideTransitionViews]
-        
         UIView.transition(with: from, duration: 1.0, options: transitionOptions, animations: {
             from.isHidden = true
         })
-        
         UIView.transition(with: to, duration: 1.0, options: transitionOptions, animations: {
             to.isHidden = false
         })
@@ -295,9 +290,9 @@ class ViewController: UIViewController {
                                      userInfo: nil,
                                      repeats: false)
                 
-                //======SON QUAND IL Y A DEUX CARTE DU MÊME NOM==========
+              //======SON QUAND IL Y A DEUX CARTE DU MÊME NOM=======
                 AudioServicesPlaySystemSound(SystemSoundID(1031))
-                //==========================
+             //====================================================
                 
             } else {
                 arrayOfCards = []
@@ -316,7 +311,6 @@ class ViewController: UIViewController {
         compteurDeCache = compteurDeCache + 2
         // NOMBRE DE CARTE HIDDEN
         if compteurDeCache == 20 {
-            
             gagne.alpha = 1 //OPACITE
             boutonReset.isHidden = false
             
@@ -335,6 +329,7 @@ class ViewController: UIViewController {
             }, completion: nil)
             //==============================================
             
+            
         }
     }
     //==================
@@ -351,14 +346,14 @@ class ViewController: UIViewController {
             card.isHidden =  false
         }
         gagne.alpha = 0 // POUR CACHER "BRAVO!" QUAND ON VEUT RECOMMENCER LE JEU QU'ON A GAGNÉ
-        
         arrayOfAnimalNames = ["lemur.png", "bull.png", "chick.png", "fox.png","hedgehog.png","hippopotamus.png","koala.png","pig.png","tiger.png","zebra.png","lemur.png", "bull.png", "chick.png", "fox.png","hedgehog.png","hippopotamus.png","koala.png","pig.png","tiger.png","zebra.png",]
+        compteurDeCache = 0
+        boutonReset.isHidden = true
         arrayOfRandomAnimalNames = []
         randomAnimals()
         setImagesToCards()
     }
-    //-------------------
-
+    //==================
     enum UIViewAnimationCurve : Int {
         case EaseInOut
         case EaseIn
@@ -368,6 +363,7 @@ class ViewController: UIViewController {
     
 }
 
+// Source de l'animation : https://medium.com/@RobertGummesson/a-look-at-uiview-animation-curves-part-1-191d9e6de0ab
 
 
 

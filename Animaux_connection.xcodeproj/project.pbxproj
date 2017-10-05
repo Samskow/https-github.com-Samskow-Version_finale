@@ -32,6 +32,7 @@
 		7EA9DC2B1F7B289B00247A0E /* jouer.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EA9DC2A1F7B289A00247A0E /* jouer.png */; };
 		7EA9DC2D1F7B2E7600247A0E /* VueMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9DC2C1F7B2E7600247A0E /* VueMenuController.swift */; };
 		7EA9DC2F1F7B56FB00247A0E /* bravo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EA9DC2E1F7B56FA00247A0E /* bravo.png */; };
+		7ECCD33C1F86F11000439616 /* regle_dujeu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ECCD33B1F86F10F00439616 /* regle_dujeu.png */; };
 		7EF7D6091F7843F100AE550D /* Icon-167.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF7D5EB1F7843E800AE550D /* Icon-167.png */; };
 		7EF7D60A1F7843F100AE550D /* Icon-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF7D5EC1F7843E800AE550D /* Icon-20.png */; };
 		7EF7D60B1F7843F100AE550D /* Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF7D5ED1F7843E800AE550D /* Icon-100.png */; };
@@ -96,6 +97,7 @@
 		7EA9DC2A1F7B289A00247A0E /* jouer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jouer.png; path = images/jouer.png; sourceTree = "<group>"; };
 		7EA9DC2C1F7B2E7600247A0E /* VueMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VueMenuController.swift; sourceTree = "<group>"; };
 		7EA9DC2E1F7B56FA00247A0E /* bravo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bravo.png; path = images/bravo.png; sourceTree = "<group>"; };
+		7ECCD33B1F86F10F00439616 /* regle_dujeu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = regle_dujeu.png; path = images/regle_dujeu.png; sourceTree = "<group>"; };
 		7EF7D5EB1F7843E800AE550D /* Icon-167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-167.png"; path = "appiconmaker/Icon-167.png"; sourceTree = "<group>"; };
 		7EF7D5EC1F7843E800AE550D /* Icon-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-20.png"; path = "appiconmaker/Icon-20.png"; sourceTree = "<group>"; };
 		7EF7D5ED1F7843E800AE550D /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-100.png"; path = "appiconmaker/Icon-100.png"; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 		9B01626C1F72E2CA005912CE /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7ECCD33B1F86F10F00439616 /* regle_dujeu.png */,
 				7E455B1F1F7C463A004A7B29 /* fleche.png */,
 				7E455B1D1F7C455F004A7B29 /* recommencer.png */,
 				7E455B1B1F7C448E004A7B29 /* aide.png */,
@@ -356,6 +359,7 @@
 				7EF7D6231F7843F100AE550D /* Icon-88.png in Resources */,
 				7EF7D6241F7843F100AE550D /* Icon-16.png in Resources */,
 				7E85E12F1F749BD1005F9DB2 /* koala.png in Resources */,
+				7ECCD33C1F86F11000439616 /* regle_dujeu.png in Resources */,
 				7E85E1261F749BD1005F9DB2 /* chick.png in Resources */,
 				7EF7D6181F7843F100AE550D /* Icon-72.png in Resources */,
 				7E85E1301F749BD1005F9DB2 /* zebra.png in Resources */,
